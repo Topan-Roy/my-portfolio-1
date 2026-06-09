@@ -6,12 +6,10 @@ import Study from "../../component/Study/Study";
 
 const About = () => {
 
-  const resumeViewUrl = "https://drive.google.com/drive/folders/1TqbtMwg_lI7zJSQXsT42QENUjNxt9qfb";
-  
-  const resumeDownloadUrl = "https://drive.google.com/uc?export=download&id=1gfo9gMOSU91FIkVhaznwcCWuxrTr7KYw";
+  const resumeViewUrl = "https://drive.google.com/file/d/15zwjE0RYL0BKijHpo3hZx7OurZKMSNa_/view?usp=drive_link";
 
+  const resumeDownloadUrl = "https://drive.google.com/uc?export=download&id=15zwjE0RYL0BKijHpo3hZx7OurZKMSNa_";
 
-  
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resumeDownloadUrl;
@@ -21,7 +19,7 @@ const About = () => {
     document.body.removeChild(link);
   };
 
- 
+
   const handleView = () => {
     window.open(resumeViewUrl, "_blank");
   };

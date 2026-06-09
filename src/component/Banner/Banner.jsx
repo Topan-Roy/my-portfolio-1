@@ -92,7 +92,7 @@ const Banner = () => {
               Contact Me
             </a>
             <a
-              href="https://drive.google.com/uc?export=download&id=1gfo9gMOSU91FIkVhaznwcCWuxrTr7KYw"
+              href="https://drive.google.com/uc?export=download&id=15zwjE0RYL0BKijHpo3hZx7OurZKMSNa_"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-slate-800/50 px-8 py-4 font-bold text-emerald-400 backdrop-blur-md transition-all hover:bg-slate-800 hover:text-emerald-300 hover:shadow-[0_0_20px_rgba(52,211,153,0.2)]"
             >
               <FaArrowDown className="transition-transform group-hover:translate-y-1" /> Download CV

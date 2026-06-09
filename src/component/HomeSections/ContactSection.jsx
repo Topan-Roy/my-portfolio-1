@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import {
   FaArrowRight,
   FaEnvelope,
@@ -50,6 +51,7 @@ const ContactSection = () => {
     email: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -69,9 +71,11 @@ const ContactSection = () => {
       return;
     }
 
-    // 1. Send email to roytopan734@gmail.com using Web3Forms
+    setLoading(true);
+
+    // Send email using Web3Forms
     try {
-      await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -85,21 +89,8 @@ const ContactSection = () => {
           subject: `New Portfolio Message from ${formData.name}`,
         }),
       });
-    } catch (emailError) {
-      console.error("Email sending failed:", emailError);
-    }
 
-    // 2. Save data to your MongoDB Server
-    try {
-      const response = await fetch(
-        "https://my-portfolio-server-blush.vercel.app/contact",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        },
-      );
-      const data = await response.json();
+      const data = await res.json();
 
       if (data.success) {
         Swal.fire({
@@ -117,14 +108,16 @@ const ContactSection = () => {
           confirmButtonColor: "#ef4444",
         });
       }
-    } catch (error) {
+    } catch (emailError) {
       Swal.fire({
         icon: "error",
         title: "Server error",
-        text: "Unable to connect to the server. Please try again later.",
+        text: "Unable to send message. Please try again later.",
         confirmButtonColor: "#ef4444",
       });
-      console.error(error);
+      console.error("Email sending failed:", emailError);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -214,9 +207,22 @@ const ContactSection = () => {
               rows={7}
             />
           </label>
-          <button type="submit" className="btn-primary contact-submit-btn w-full justify-center sm:w-fit">
-            Send Message
-            <FaArrowRight />
+          <button
+            type="submit"
+            disabled={loading}
+            className="btn-primary contact-submit-btn w-full justify-center sm:w-fit cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+          >
+            {loading ? (
+              <>
+                <AiOutlineLoading3Quarters className="animate-spin" />
+                Sending...
+              </>
+            ) : (
+              <>
+                Send Message
+                <FaArrowRight />
+              </>
+            )}
           </button>
         </form>
       </div>

@@ -1,7 +1,7 @@
 import { FaArrowRight, FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const resumeViewUrl =
-  "https://drive.google.com/file/d/1C9uev8sp_6gIywFaUq1jYl-nM-ochr18/view?usp=drive_link";
+  "https://drive.google.com/drive/u/0/folders/1TqbtMwg_lI7zJSQXsT42QENUjNxt9qfb";
 
 const stats = [
   ["20+", "Live projects"],

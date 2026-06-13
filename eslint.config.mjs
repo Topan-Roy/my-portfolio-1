@@ -25,7 +25,6 @@ export default [
     rules: {
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
-      // Allow unused vars that start with _ or are uppercase (e.g. motion, React)
       'no-unused-vars': ['warn', {
         varsIgnorePattern: '^[A-Z_]|^motion$',
         argsIgnorePattern: '^_',

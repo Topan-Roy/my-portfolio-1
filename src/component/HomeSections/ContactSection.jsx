@@ -12,6 +12,9 @@ import {
   FaPhone,
 } from "react-icons/fa6";
 
+
+
+
 const contactInfo = [
   {
     type: "email",

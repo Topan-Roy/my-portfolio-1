@@ -42,7 +42,7 @@ const Banner = () => {
             className="mb-5 inline-flex max-w-full items-center gap-3 rounded-full border border-cyan-500/30 bg-cyan-900/20 px-5 py-2 text-sm text-cyan-50 shadow-[0_0_20px_rgba(6,182,212,0.15)] backdrop-blur-md"
           >
             <span className="h-2.5 w-2.5 rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.9)] animate-pulse" />
-            <span className="min-w-0 font-medium tracking-wide">Available for full stack web and React Native apps</span>
+            <span className="min-w-0 font-medium tracking-wide">Available for Full-Stack Web & React Native Development </span>
           </motion.div>
 
           <motion.h1
@@ -51,7 +51,7 @@ const Banner = () => {
           >
             Topan Roy
             <span className="mt-4 block text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-300 sm:text-3xl lg:text-4xl">
-              builds web platforms & mobile apps.
+              Building Scalable Web Platforms & Mobile Apps.
             </span>
           </motion.h1>
 
@@ -63,10 +63,10 @@ const Banner = () => {
             <span className="font-bold text-cyan-300">
               <Typewriter
                 words={[
-                  "Full Stack Developer",
-                  "React Native App Developer",
-                  "MERN Stack Developer",
-                  "React Developer",
+                  "Full-Stack MERN Developer",
+                  "React Native Developer",
+                  "Frontend React Developer",
+                  "JavaScript & TypeScript Developer",
                 ]}
                 loop
                 cursor
@@ -76,8 +76,8 @@ const Banner = () => {
                 delaySpeed={1400}
               />
             </span>
-            , focused on responsive websites, full stack dashboards, APIs, and
-            user-friendly mobile app experiences.
+            ,  passionate about building responsive web applications, scalable backend
+            systems, REST APIs, and user-friendly cross-platform mobile applications.
           </motion.p>
 
           <motion.div
@@ -175,12 +175,12 @@ const Banner = () => {
           ))}
 
           <div className="profile-chip">
-            <Image 
-              src="/image.png" 
-              alt="Topan Roy" 
-              width={54} 
-              height={54} 
-              className="rounded-2xl object-cover object-top" 
+            <Image
+              src="/image.png"
+              alt="Topan Roy"
+              width={54}
+              height={54}
+              className="rounded-2xl object-cover object-top"
             />
             <div>
               <strong>Topan Roy</strong>

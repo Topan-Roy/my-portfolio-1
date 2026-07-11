@@ -30,10 +30,10 @@ const AboutSection = () => {
             I turn ideas into full stack web products and mobile app experiences.
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300">
-            I am Topan Roy, a full stack developer from Dinajpur, Bangladesh. I
-            build practical products with React, React Native, Tailwind,
-            Firebase, Node.js, Express, and MongoDB. My focus is simple: make
-            web and mobile experiences that feel clear, fast, and easy to use.
+            I am Topan Roy, a Full Stack MERN and React Native Developer based in Dinajpur, Bangladesh. 
+            I have professional experience building cross-platform mobile applications and scalable web platforms. 
+            Skilled in React.js, Next.js, React Native, Node.js, Express.js, MongoDB, Firebase, and TypeScript, 
+            I focus on developing responsive user interfaces, integrating REST APIs, implementing secure authentication, and delivering clean, maintainable code.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">

@@ -12,7 +12,7 @@ const education = [
   },
   {
     id: 2,
-    title: "Diploma in Computer Technology",
+    title: "Diploma in Computer Science Engineering",
     place: "Aptouch Polytechnic Institute, Dinajpur",
     date: "2020 - 2025",
     description: "Gained strong foundational knowledge in computer architecture, networking, data structures, and software engineering principles.",

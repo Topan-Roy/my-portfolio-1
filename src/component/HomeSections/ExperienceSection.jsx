@@ -2,16 +2,17 @@ import { FaBriefcase } from "react-icons/fa6";
 
 const experiences = [
   {
-    role: "React Native / App Developer",
-    company: "BD Calling - SpackTech Agency",
-    duration: "6 months",
+    role: "React Native Developer",
+    company: "Sparktech Agency",
+    duration: "Nov 2025 – Jun 2026",
     type: "Professional experience",
     points: [
-      "Worked on mobile app interfaces and feature flows using React Native.",
-      "Built reusable app components and connected screens with real product requirements.",
-      "Collaborated in an agency environment with practical delivery expectations.",
+      "Developed cross-platform mobile applications using React Native, Expo, and TypeScript.",
+      "Integrated REST APIs, Firebase Authentication, AsyncStorage, and reusable UI components.",
+      "Collaborated with team members using Git/GitHub, fixed production bugs, and optimized application performance.",
+      "Built responsive mobile interfaces following modern development best practices."
     ],
-    stack: ["React Native", "JavaScript", "Mobile UI", "API Integration"],
+    stack: ["React Native", "Expo", "TypeScript", "REST APIs", "Firebase Auth", "Git/GitHub"],
   },
 ];
 

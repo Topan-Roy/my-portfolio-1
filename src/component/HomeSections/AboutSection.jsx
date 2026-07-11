@@ -35,13 +35,13 @@ const AboutSection = () => {
         <div>
           <p className="section-kicker">About me</p>
           <h2 className="section-title">
-            I turn ideas into full stack web products and mobile app experiences.
+            I turn ideas into full-stack web applications and mobile experiences.
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300">
-            I am Topan Roy, a Full Stack MERN and React Native Developer based in Dinajpur, Bangladesh. 
-            I have professional experience building cross-platform mobile applications and scalable web platforms. 
-            Skilled in React.js, Next.js, React Native, Node.js, Express.js, MongoDB, Firebase, and TypeScript, 
-            I focus on developing responsive user interfaces, integrating REST APIs, implementing secure authentication, and delivering clean, maintainable code.
+            I am Topan Roy, a Full Stack MERN Developer and React Native Developer based in Dinajpur, Bangladesh. 
+            I have professional experience building scalable web applications and cross-platform mobile apps. 
+            My expertise includes React.js, Next.js, React Native, Node.js, Express.js, MongoDB, Firebase, TypeScript, and Tailwind CSS. 
+            I enjoy building responsive user interfaces, developing REST APIs, implementing secure authentication, and writing clean, maintainable, and scalable code.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">

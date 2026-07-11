@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaArrowRight, FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const resumeViewUrl =
@@ -16,7 +17,14 @@ const AboutSection = () => {
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="relative mx-auto w-full max-w-md">
           <div className="about-frame">
-            <img src="/image.png" alt="Topan Roy portrait" />
+            <Image 
+              src="/image.png" 
+              alt="Topan Roy portrait" 
+              width={500} 
+              height={500} 
+              className="object-cover object-top w-full aspect-square"
+              priority
+            />
           </div>
           <div className="about-badge">
             <span>Full Stack</span>

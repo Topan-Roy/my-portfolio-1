@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { styles } from "./Style.js";
@@ -80,10 +81,12 @@ const Navbar = () => {
           className="flex items-center gap-3"
           aria-label="Topan Roy portfolio home"
         >
-          <img
+          <Image
             src="/image.png"
             alt="Topan Roy"
-            className="h-10 w-10 rounded-2xl border border-cyan-300/40 object-cover"
+            width={40}
+            height={40}
+            className="h-10 w-10 rounded-2xl border border-cyan-300/40 object-cover object-top"
           />
           <span className="min-w-0 leading-tight">
             <span className="block text-base font-medium text-white">Topan Roy</span>
